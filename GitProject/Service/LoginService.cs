@@ -2,8 +2,19 @@ namespace GitProject.Service;
 
 public class LoginService
 {
+    private LoginAccount login = null;
     public LoginService()
     {
-        LoginAccount account = new LoginAccount();
+        this.login = new LoginAccount();
     }
+
+    public bool Login(string account,string password)
+    {
+        this.login.Account = account;
+        this.login.Password = password;
+
+        return true;
+
+    }
+    
 }
