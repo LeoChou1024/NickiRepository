@@ -9,6 +9,12 @@ namespace GitProject
     internal class Account
     {
         public string Name { get; set; }
-        public string Password { get; set; }
+        public int Password { get; set; }
+
+        public Account(string name, int password) 
+        {
+            this.Name = name;
+            this.Password = password;
+        }
     }
 }
