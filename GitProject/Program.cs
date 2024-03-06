@@ -10,3 +10,13 @@ else
 {
     Console.WriteLine("登入失敗");
 }
+using GitProject;
+
+Console.WriteLine("Hello, World!");
+
+Account account = new Account("Nicki", 1028);
+Console.WriteLine(account.Name);
+Console.WriteLine(account.Password);
+
+
+Console.ReadKey();
