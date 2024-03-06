@@ -6,15 +6,17 @@ using System.Threading.Tasks;
 
 namespace GitProject
 {
-    internal class Account
+    internal class Login
     {
         public string Name { get; set; }
         public int Password { get; set; }
-
-        public Account(string name, int password) 
+        public bool Loginfun(string name, int password) 
         {
             this.Name = name;
             this.Password = password;
+
+            return true;
+
         }
     }
 }
