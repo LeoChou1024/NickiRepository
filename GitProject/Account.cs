@@ -11,10 +11,14 @@ namespace GitProject
         public string Name { get; set; }
         public int Password { get; set; }
 
-        public Account(string name, int password) 
+        public string Email { get; set; }
+
+        public Account(string name, int password, string email) 
         {
             this.Name = name;
             this.Password = password;
+            this.Email = email;
+
         }
     }
 }
